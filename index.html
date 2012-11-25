@@ -8,12 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1 /">
         <title>Ellen Rodriguez&mdash;Electronic Medical Record</title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="-/c/html5reset.css" />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="-/c/base.css" />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -21,63 +22,69 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="site-header">
+        <header class="masthead">
             <div class="inner">
                 <h1>Electronic Medical Records</h1>
                 <p><a href="#">Print this page</a></p>
             </div><!-- .inner -->
-        </header><!-- .site-header -->
+        </header><!-- .masthead -->
         
         <section id="demographics" class="drawer">
             
             <header class="section-header">
-                <h1>Demographics</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Demographics</h1>
+                </div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="vcard">
-                <caption>Demographics</caption>
-                <tr class="info">
-                    <th>First Name</th>
-                    <td class="given-name">Ellen</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Last Name</th>
-                    <td class="family-name">Rodriguez</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Gender</th>
-                    <td>Female</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Marital Status</th>
-                    <td>Single</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Religious Affiliation</th>
-                    <td>Christian</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Ethnicity</th>
-                    <td>Asian</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Speaks</th>
-                    <td>English, Portuguese</td>
-                </tr><!-- .info -->
-                <tr class="chart adr">
-                    <th class="phark icon-address">Address</th>
-                    <td><span class="street-address">17 Daws Road</span>,<br /><span class="locality">Portland</span>, <span class="region">OR</span> <span class="postal-code">97006</span></td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th class="phark icon-phone">Phone</th>
-                    <td class="tel">(415) 555-1229</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th class="phark icon-birthday">Birthday</th>
-                    <td>March 7, 1960</td>
-                </tr><!-- .chart -->
+            <div class="inner">
+                <table class="vcard">
+                    <caption>Demographics</caption>
+                    <tr class="info">
+                        <th>First Name</th>
+                        <td class="given-name">Ellen</td>
+                    </tr><!-- .info -->
+                    <tr class="info">
+                        <th>Last Name</th>
+                        <td class="family-name">Rodriguez</td>
+                    </tr><!-- .info -->
+                    <tr class="info col50">
+                        <th>Gender</th>
+                        <td>Female</td>
+                    </tr><!-- .info -->
+                    <tr class="info col50">
+                        <th>Marital Status</th>
+                        <td>Single</td>
+                    </tr><!-- .info -->
+                    <tr class="info col50">
+                        <th>Religious Affiliation</th>
+                        <td>Christian</td>
+                    </tr><!-- .info -->
+                    <tr class="info col50">
+                        <th>Ethnicity</th>
+                        <td>Asian</td>
+                    </tr><!-- .info -->
+                    <tr class="info clear">
+                        <th>Speaks</th>
+                        <td>English, Portuguese</td>
+                    </tr><!-- .info -->
+                    <tr class="chart adr">
+                        <th class="phark icon-address">Address</th>
+                        <td><span class="street-address">17 Daws Road</span>,<br /><span class="locality">Portland</span>, <span class="region">OR</span> <span class="postal-code">97006</span></td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th class="phark icon-phone">Phone</th>
+                        <td class="tel">(415) 555-1229</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th class="phark icon-birthday">Birthday</th>
+                        <td>March 7, 1960</td>
+                    </tr><!-- .chart -->
                 
-            </table><!-- .vcard -->
+                </table><!-- .vcard -->
+            
+            </div><!-- .inner -->
+            
             
         </section><!-- #demographics.drawer -->
         
@@ -85,258 +92,293 @@
         <section id="guardian" class="drawer">
             
             <header class="section-header">
-                <h1>Guardian</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Guardian</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="vcard">
-                <caption>Guardian</caption>
-                <tr class="info">
-                    <th>First Name</th>
-                    <td class="given-name">Martha</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Last Name</th>
-                    <td class="family-name">Shan</td>
-                </tr><!-- .info -->
-                <tr class="info">
-                    <th>Role</th>
-                    <td>Sister</td>
-                </tr><!-- .info -->
-                <tr class="chart adr">
-                    <th class="phark icon-address">Address</th>
-                    <td><span class="street-address">1357 Amber Drive</span>,<br /><span class="locality">Beaverton</span>, <span class="region">OR</span> <span class="postal-code">97006</span></td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th class="phark icon-phone">Phone</th>
-                    <td class="tel">(816) 276-6909</td>
-                </tr><!-- .chart -->
+            <div class="inner">
                 
-            </table><!-- .vcard -->
+                <table class="vcard">
+                    <caption>Guardian</caption>
+                    <tr class="info col50">
+                        <th>First Name</th>
+                        <td class="given-name">Martha</td>
+                    </tr><!-- .info -->
+                    <tr class="info col50">
+                        <th>Last Name</th>
+                        <td class="family-name">Shan</td>
+                    </tr><!-- .info -->
+                    <tr class="info">
+                        <th>Role</th>
+                        <td>Sister</td>
+                    </tr><!-- .info -->
+                    <tr class="chart adr">
+                        <th class="phark icon-address">Address</th>
+                        <td><span class="street-address">1357 Amber Drive</span>,<br /><span class="locality">Beaverton</span>, <span class="region">OR</span> <span class="postal-code">97006</span></td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th class="phark icon-phone">Phone</th>
+                        <td class="tel">(816) 276-6909</td>
+                    </tr><!-- .chart -->
+                
+                </table><!-- .vcard -->
+            
+            </div><!-- .inner -->
             
         </section><!-- #guardian.drawer -->
         
         <section id="provider" class="drawer">
             
             <header class="section-header">
-                <h1>Provider</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Provider</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="vcard">
-                <caption>Provider</caption>
- 
-                <tr class="chart adr">
-                    <th class="phark icon-address">Address</th>
-                    <td><span class="org">Ashby Medical Center</span><br /><span class="street-address">1002 Healthcare Dr</span>,<br /><span class="locality">Portland</span>, <span class="region">OR</span> <span class="postal-code">97266</span></td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th class="phark icon-phone">Phone</th>
-                    <td class="tel">(415) 555-1200</td>
-                </tr><!-- .chart -->
+            <div class="inner">
                 
-            </table><!-- .vcard -->
+                <table class="vcard">
+                    <caption>Provider</caption>
+ 
+                    <tr class="chart adr">
+                        <th class="phark icon-address">Address</th>
+                        <td><span class="org">Ashby Medical Center</span><br /><span class="street-address">1002 Healthcare Dr</span>,<br /><span class="locality">Portland</span>, <span class="region">OR</span> <span class="postal-code">97266</span></td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th class="phark icon-phone">Phone</th>
+                        <td class="tel">(415) 555-1200</td>
+                    </tr><!-- .chart -->
+                
+                </table><!-- .vcard -->
+            
+            </div><!-- .inner -->
             
         </section><!-- #provider.drawer -->
         
         <section id="allergies" class="drawer">
             
             <header class="section-header">
-                <h1>Allergies</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Allergies</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <article class="allergy">
+            <div class="inner">
                 
-                <h1>Bee Stings</h1>
+                <article class="allergy">
                 
-                <dl class="info">
-                    <dt>Reaction</dt>
-                        <dd>Anaphylactic Shock</dd>
-                </dl><!-- .info -->
+                    <h1>Bee Stings</h1>
                 
-                <meter class="mild-to-severe" value="10" min="0" max="10">Severe</meter>
+                    <dl class="info">
+                        <dt>Reaction</dt>
+                            <dd>Anaphylactic Shock</dd>
+                    </dl><!-- .info -->
                 
-            </article><!-- .allergy -->
+                    <meter class="mild-to-severe" value="10" min="0" max="10">Severe</meter>
+                
+                </article><!-- .allergy -->
             
-            <article class="allergy">
+                <article class="allergy">
                 
-                <h1>Penicillin</h1>
+                    <h1>Penicillin</h1>
                 
-                <dl class="info">
-                    <dt>Reaction</dt>
-                        <dd>Hives</dd>
-                </dl><!-- .info -->
+                    <dl class="info">
+                        <dt>Reaction</dt>
+                            <dd>Hives</dd>
+                    </dl><!-- .info -->
                 
-                <meter class="mild-to-severe" value="7" min="0" max="10">Moderately Severe</meter>
+                    <meter class="mild-to-severe" value="7" min="0" max="10">Moderately Severe</meter>
                 
-            </article><!-- .allergy -->
+                </article><!-- .allergy -->
             
-            <article class="allergy">
+                <article class="allergy">
                 
-                <h1>Codeine</h1>
+                    <h1>Codeine</h1>
                 
-                <dl class="info">
-                    <dt>Reaction</dt>
-                        <dd>Shortness of breath</dd>
-                </dl><!-- .info -->
+                    <dl class="info">
+                        <dt>Reaction</dt>
+                            <dd>Shortness of breath</dd>
+                    </dl><!-- .info -->
                 
-                <meter class="mild-to-severe" value="5" min="0" max="10">Moderate</meter>
+                    <meter class="mild-to-severe" value="5" min="0" max="10">Moderate</meter>
                 
-            </article><!-- .allergy -->
+                </article><!-- .allergy -->
+            
+            </div><!-- .inner -->
             
         </section><!-- #allergies.drawer -->
         
         <section id="immunizations" class="drawer">
             
             <header class="section-header">
-                <h1>Immunizations</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Immunizations</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="table-list vevent">                
- 
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col" class="summary">Influenza virus vaccine, IM</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Type</th>
-                    <td class="category">Intramuscular injection</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td class="dtstart">May 2001</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th><abbr title="Quantity">Qty</abbr></th>
-                    <td>50/mcg</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Notes</th>
-                    <td class="description">Possible flu-like symptoms for three days</td>
-                </tr><!-- .chart -->
+            <div class="inner">
                 
-            </table><!-- .table-list -->
+                <table class="table-list vevent">                
+ 
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col" class="summary">Influenza virus vaccine, IM</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Type</th>
+                        <td class="category">Intramuscular injection</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td class="dtstart">May 2001</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th><abbr title="Quantity">Qty</abbr></th>
+                        <td>50/mcg</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Notes</th>
+                        <td class="description">Possible flu-like symptoms for three days</td>
+                    </tr><!-- .chart -->
+                
+                </table><!-- .table-list -->
             
-            <table class="table-list vevent">                
+                <table class="table-list vevent">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col" class="summary">Tetanus and diphtheria toxoids, IM</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Type</th>
-                    <td class="category">Intramuscular injection</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td class="dtstart">May 2001</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th><abbr title="Quantity">Qty</abbr></th>
-                    <td>50/mcg</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Notes</th>
-                    <td class="description">Mild pain or soreness in the local area</td>
-                </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col" class="summary">Tetanus and diphtheria toxoids, IM</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Type</th>
+                        <td class="category">Intramuscular injection</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td class="dtstart">May 2001</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th><abbr title="Quantity">Qty</abbr></th>
+                        <td>50/mcg</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Notes</th>
+                        <td class="description">Mild pain or soreness in the local area</td>
+                    </tr><!-- .chart -->
                 
-            </table><!-- .table-list -->
+                </table><!-- .table-list -->
+            
+            </div><!-- .inner -->
             
         </section><!-- #immunizations.drawer -->
         
         <section id="medications" class="drawer">
             
             <header class="section-header">
-                <h1>Medications</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Medications</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="table-list medication-liquid">                
+            <div class="inner">
+                
+                <table class="table-list medication-liquid">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col">Acetaminophen with codiene</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Type</th>
-                    <td><strong class="instructions">2 puffs, once a day</strong></td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>By</th>
-                    <td>Ashby Medical Center</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td>May 2001</td>
-                </tr><!-- .chart -->
-            </table><!-- .table-list -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col">Acetaminophen with codiene</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Type</th>
+                        <td><strong class="instructions">2 puffs, once a day</strong></td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>By</th>
+                        <td>Ashby Medical Center</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td>May 2001</td>
+                    </tr><!-- .chart -->
+                </table><!-- .table-list -->
             
-            <table class="table-list medication-tablet">                
+                <table class="table-list medication-tablet">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col">Indomethacin</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Type</th>
-                    <td><strong class="instructions">50<abbr title="milligrams">mg</abbr> with food, twice a day</strong></td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>By</th>
-                    <td>Ashby Medical Center</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td>December 10, 2003</td>
-                </tr><!-- .chart -->
-            </table><!-- .table-list -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col">Indomethacin</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Type</th>
+                        <td><strong class="instructions">50<abbr title="milligrams">mg</abbr> with food, twice a day</strong></td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>By</th>
+                        <td>Ashby Medical Center</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td>December 10, 2003</td>
+                    </tr><!-- .chart -->
+                </table><!-- .table-list -->
             
+            
+            </div><!-- .inner -->
             
         </section><!-- #medications.drawer -->
         
         <section id="plan-of-care" class="drawer">
             
             <header class="section-header">
-                <h1>Plan of Care</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>Plan of Care</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <table class="table-list vevent">                
+            <div class="inner">
+                <table class="table-list vevent">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col" class="summary">Office consultation</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Notes</th>
-                    <td class="description">Consultation with Dr. George Potomac for Asthma</td>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td class="dtstart">May 28, 2007 <a class="button" href="#">Add to calendar</a></td>
-                </tr><!-- .chart -->
-            </table><!-- .table-list -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col" class="summary">Office consultation</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Notes</th>
+                        <td class="description">Consultation with Dr. George Potomac for Asthma</td>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td class="dtstart">May 28, 2007 <a class="button" href="#">Add to calendar</a></td>
+                    </tr><!-- .chart -->
+                </table><!-- .table-list -->
             
-            <table class="table-list vevent">                
+                <table class="table-list vevent">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col" class="summary">Chest X-Ray</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td class="dtstart">June 1, 2007 <a class="button" href="#">Add to calendar</a></td>
-                </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col" class="summary">Chest X-Ray</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td class="dtstart">June 1, 2007 <a class="button" href="#">Add to calendar</a></td>
+                    </tr><!-- .chart -->
                 
-            </table><!-- .table-list -->
+                </table><!-- .table-list -->
             
-            <table class="table-list vevent">                
+                <table class="table-list vevent">                
  
-                <tr class="chart">
-                    <th>Name</th>
-                    <th scope="col" class="summary">Sputum Culture</th>
-                </tr><!-- .chart -->
-                <tr class="chart">
-                    <th>Date</th>
-                    <td class="dtstart">June 18, 2007 <a class="button" href="#">Add to calendar</a></td>
-                </tr><!-- .chart -->
-            </table><!-- .table-list -->
+                    <tr class="chart">
+                        <th>Name</th>
+                        <th scope="col" class="summary">Sputum Culture</th>
+                    </tr><!-- .chart -->
+                    <tr class="chart">
+                        <th>Date</th>
+                        <td class="dtstart">June 18, 2007 <a class="button" href="#">Add to calendar</a></td>
+                    </tr><!-- .chart -->
+                </table><!-- .table-list -->
+            
+            </div><!-- .inner -->
             
         </section><!-- #plan-of-care.drawer -->
         
@@ -344,98 +386,104 @@
         <section id="history" class="drawer">
             
             <header class="section-header">
-                <h1>History</h1>
-            </h1><!-- .section-header -->
+                <div class="inner">
+                    <h1>History</h1>
+    			</div><!-- .inner -->
+			</header><!-- .section-header -->
             
-            <article class="history-item vevent">
+            <div class="inner">
                 
-                <header class="article-header">
-                    <strong class="status status-active">Active</strong>
-                    <h1 class="summary">Ankle Sprain</h1>
-                    <time class="dtstart">March 28, 2005</time>
-                    <p class="description">Slipped on ice and fell</p>
-                </header><!-- .article-header -->
+                <article class="history-item vevent">
                 
-                <table class="table-list">                
+                    <header class="article-header">
+                        <strong class="status status-active">Active</strong>
+                        <h1 class="summary">Ankle Sprain</h1>
+                        <time class="dtstart">March 28, 2005</time>
+                        <p class="description">Slipped on ice and fell</p>
+                    </header><!-- .article-header -->
+                
+                    <table class="table-list">                
  
-                    <tr class="info">
-                        <th>Procedure</th>
-                        <td>Laparoscopic Cholecystectomy</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Provider</th>
-                        <td>Dr. Bala Venktaraman</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Location</th>
-                        <td>Ashby Medical Center</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Date</th>
-                        <td>June 1, 2005</td>
-                    </tr><!-- .info -->
-                </table><!-- .table-list -->
-            </article><!-- .history-item -->
+                        <tr class="info">
+                            <th>Procedure</th>
+                            <td>Laparoscopic Cholecystectomy</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Provider</th>
+                            <td>Dr. Bala Venktaraman</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Location</th>
+                            <td>Ashby Medical Center</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Date</th>
+                            <td>June 1, 2005</td>
+                        </tr><!-- .info -->
+                    </table><!-- .table-list -->
+                </article><!-- .history-item -->
             
-            <article class="history-item vevent">
+                <article class="history-item vevent">
                 
-                <header class="article-header">
-                    <strong class="status status-resolved">Resolved</strong>
-                    <h1 class="summary">Cholecystitis</h1>
-                    <time class="dtstart">September 28, 2002</time>
-                    <p class="description">Slipped on ice and fell</p>
-                </header><!-- .article-header -->
+                    <header class="article-header">
+                        <strong class="status status-resolved">Resolved</strong>
+                        <h1 class="summary">Cholecystitis</h1>
+                        <time class="dtstart">September 28, 2002</time>
+                        <p class="description">Slipped on ice and fell</p>
+                    </header><!-- .article-header -->
                 
-                <table class="table-list">                
+                    <table class="table-list">                
  
-                    <tr class="info">
-                        <th>Procedure</th>
-                        <td>Laparoscopic Cholecystectomy</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Provider</th>
-                        <td>Dr. Bala Venktaraman</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Location</th>
-                        <td>Ashby Medical Center</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Date</th>
-                        <td>June 1, 2005</td>
-                    </tr><!-- .info -->
-                </table><!-- .table-list -->
-            </article><!-- .history-item -->
+                        <tr class="info">
+                            <th>Procedure</th>
+                            <td>Laparoscopic Cholecystectomy</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Provider</th>
+                            <td>Dr. Bala Venktaraman</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Location</th>
+                            <td>Ashby Medical Center</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Date</th>
+                            <td>June 1, 2005</td>
+                        </tr><!-- .info -->
+                    </table><!-- .table-list -->
+                </article><!-- .history-item -->
             
-            <article class="history-item vevent">
+                <article class="history-item vevent">
                 
-                <header class="article-header">
-                    <strong class="status status-resolved">Resolved</strong>
-                    <h1 class="summary">Pregnancy</h1>
-                    <time class="dtstart">April 27, 2001</time>
-                </header><!-- .article-header -->
+                    <header class="article-header">
+                        <strong class="status status-resolved">Resolved</strong>
+                        <h1 class="summary">Pregnancy</h1>
+                        <time class="dtstart">April 27, 2001</time>
+                    </header><!-- .article-header -->
                 
-                <table class="table-list">                
+                    <table class="table-list">                
  
-                    <tr class="info">
-                        <th>Procedure</th>
-                        <td>Laparoscopic Cholecystectomy</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Provider</th>
-                        <td>Dr. Bala Venktaraman</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Location</th>
-                        <td>Ashby Medical Center</td>
-                    </tr><!-- .info -->
-                    <tr class="info">
-                        <th>Date</th>
-                        <td>June 1, 2005</td>
-                    </tr><!-- .info -->
-                </table><!-- .table-list -->
-            </article><!-- .history-item -->
+                        <tr class="info">
+                            <th>Procedure</th>
+                            <td>Laparoscopic Cholecystectomy</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Provider</th>
+                            <td>Dr. Bala Venktaraman</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Location</th>
+                            <td>Ashby Medical Center</td>
+                        </tr><!-- .info -->
+                        <tr class="info">
+                            <th>Date</th>
+                            <td>June 1, 2005</td>
+                        </tr><!-- .info -->
+                    </table><!-- .table-list -->
+                </article><!-- .history-item -->
             
+            
+            </div><!-- .inner -->
             
         </section><!-- #history.drawer -->
         

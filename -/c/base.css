@@ -27,14 +27,14 @@ body { font: normal 62.5%/1.5 'Source Sans Pro', sans-serif; color: #4a4a4a; bac
 
 /* block level */
 
-h1, .h1 { font: bold 22px 'Source Sans Pro', sans-serif;; color: #933; margin: 0 0 0.5em; }
-h2, .h2 { font: bold 18px 'Source Sans Pro', sans-serif;; color: #933; }
+h1, .h1 { font: bold 22px 'Source Sans Pro', sans-serif; margin: 0 0 0.5em; }
+h2, .h2 { font: bold 18px 'Source Sans Pro', sans-serif; }
 h3, .h3 { }
 h4, .h4, h5, .h5, h6, .h6 { font: normal 13px 'Source Sans Pro', sans-serif; color: #933; margin: 0 0 1em; }
 
 p, ul, dl, ol, table { margin: 0 0 1.5em; font: normal 20px 'Source Sans Pro', sans-serif; }
 
-ul { list-style-image: url(/-/i/bullet.gif); }
+ul { /*list-style-image: url(/-/i/bullet.gif);*/ }
     ul li, ol li { margin: 0 0 1em 15px; padding: 0 0 0 0.5em; }
     ol li { margin-left: 25px; }
 
@@ -54,21 +54,22 @@ table { width: 100%; }
     tbody, tr { width: 100%; display: block; }
     /*tr*/.info th, /*tr*/.info td { display: block; width: 100%; }
     /*th { font-weight: normal; text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: #a2a2a2; }*/
-    th:not([scope="col"]) { font-weight: normal; text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: #a2a2a2; }
+    th:not([scope="col"]), .info dt { font-weight: normal; text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: #a2a2a2; }
     .info td { padding: 0 0 1em; font-size: 30px; }
+    .inset .info td { font-size: 24px; }
     
     .chart th { display: block; width: 25%; float: left; padding: 0 0 0.5em; }
     .chart th:not([scope="col"]) { position: relative; top: 0.35em; }
     .chart:first-child th:not([scope="col"]) { position: relative; top: 0.7em; }
-    .chart td, .chart th[scope="col"] { display: block; width: 75%; float: left; font-size: 18px; padding: 0 0 0.5em; }
-    .chart th.summary { font-size: 24px; }
+    .chart td, .chart th[scope="col"] { display: block; width: 75%; float: left; font-size: 21px; padding: 0 0 0.5em; }
+    .chart th[scope="col"] { font-size: 24px; }
     
 em { font-style: italic; }
 strong { font-weight: bold; }
 /*strong*/.instructions { color: #1497c3; }
 
 mark { background: none; font-style: normal; }
-
+time { color: #bbb; }
 video { width:100%; height: auto; }
 
 a { text-decoration: none; .transition(all, 0.25s, linear); color: #39c; color: #1497c3; transition: all 0.25s linear; -moz-transition: all 0.25s linear; -webkit-transition: all 0.25s linear; -o-transition: all 0.25s linear; }
@@ -101,7 +102,7 @@ sub, sup { line-height: 0; }
 /*\*/ .phark-link { overflow: hidden; } /**/
 
 /* Easy Clearing - http://www.positioniseverything.net/easyclearing.html */ 
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:after, dl.info:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
 .clear { clear: both; }
 
@@ -127,13 +128,31 @@ sub, sup { line-height: 0; }
 
 .drawer { margin: 0 0 2em; }
 
-.inner { padding: 0 5%; max-width: 960px; margin: 0 auto; } 
+.inner { padding: 0 3%; max-width: 960px; margin: 0 auto; } 
 
+.inset { background: #efefef; border-top: 10px solid #e8e8e8; padding: 2em 0 0; }
+
+.button { margin: 1em 0 0; }
+    .button a { display: inline-block; background: #60afd0; color: #fff; font-size: 18px; padding: 0.5em 1em; border-radius: 10px; }
 
 .section-header { background: #376372; padding: 1.5em 0; margin: 0 0 1em; }
     .section-header h1 { text-transform: uppercase; letter-spacing: 0.1em; color: #fff; font-size: 20px; font-weight: 600; margin: 0; }
 
+.article-header { margin: 0 0 3em; }
+    .article-header h1, .allergy h1 { font-size: 30px; margin: 0; }
+    .article-header p { margin: 0 0 0.25em; }
+        
+        
+/*strong*/.status { text-transform: uppercase; letter-spacing: 0.1em; color: #fff; font-size: 14px; padding: 0.25em 0.5em; display: inline-block; }
+.status-resolved { background: #14a101; }
+.status-active { background: #e50100; }
 
+.table-list + .table-list:before { content: ""; width: 100%; border-top: 1px solid #e5e5e5; display: block; position: relative; top: -1em; }
+
+/*article*/.allergy { padding-left: 25%; }
+    .info dt, .info dd { float: left; }
+    .info dt { width: 25%; position: relative; top: 0.5em; }
+    .info dd { width: 75%; }
 
 /*-------------------------------------------    
     Masthead
